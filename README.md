@@ -7,21 +7,21 @@ GitHub Action to run [git-pr-release](https://github.com/motemen/git-pr-release)
 For example, here is a workflow to run `git-pr-release` when push to staging.
 
 ```
-name: Create PR from staging to master
+name: Exec git-pr-release
 on:
   push:
     branches:
-      - staging
+      - develop
 jobs:
   gitPrRelease:
     name: git-pr-release
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
     - name: git-pr-release
-      uses: bakunyo/git-pr-release-action@master
+      uses: tae124/git-pr-release-action@master
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GIT_PR_RELEASE_BRANCH_STAGING: develop
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_GIT_PR_RELEASE }}
 ```
 
 or see `.github/workflows` of this repository.
