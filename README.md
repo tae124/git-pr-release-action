@@ -4,7 +4,7 @@ GitHub Action to run [git-pr-release](https://github.com/motemen/git-pr-release)
 
 ### Usage
 
-For example, here is a workflow to run `git-pr-release` when push to staging.
+For example, here is a workflow to run `git-pr-release` when push to develop.
 
 ```
 name: Exec git-pr-release
@@ -28,7 +28,7 @@ or see `.github/workflows` of this repository.
 
 ### Environment variables
 
-#### `GITHUB_TOKEN` (required)
+#### `GITHUB_TOKEN_GIT_PR_RELEASE` (required)
 
 Add [GITHUB_TOKEN secret](https://help.github.com/en/articles/virtual-environments-for-github-actions#github_token-secret) to make authenticated calls to the GitHub API.
 
