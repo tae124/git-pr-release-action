@@ -1,6 +1,6 @@
 name: "git-pr-release"
 description: "Run git-pr-release"
-author: "bakunyo <izuta.hiroyuki@gmail.com>"
+author: "bakunyo <matsumoto.tae@gmail.com>"
 runs:
   using: "docker"
   image: "Dockerfile"
