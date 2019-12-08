@@ -28,7 +28,7 @@ or see `.github/workflows` of this repository.
 
 ### Environment variables
 
-#### `GITHUB_TOKEN` (required)
+#### `GITHUB_TOKEN_GIT_PR_RELEASE` (required)
 
 Add [GITHUB_TOKEN secret](https://help.github.com/en/articles/virtual-environments-for-github-actions#github_token-secret) to make authenticated calls to the GitHub API.
 
