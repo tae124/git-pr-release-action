@@ -4,7 +4,7 @@ GitHub Action to run [git-pr-release](https://github.com/motemen/git-pr-release)
 
 ### Usage
 
-For example, here is a workflow to run `git-pr-release` when push to staging.
+For example, here is a workflow to run `git-pr-release` when push to develop.
 
 ```
 name: Exec git-pr-release
