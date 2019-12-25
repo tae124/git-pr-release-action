@@ -11,5 +11,6 @@ jobs:
       - name: git-pr-release
         uses: tae124/git-pr-release-action@master
         env:
+          TZ: 'Asia/Tokyo'
           GIT_PR_RELEASE_BRANCH_STAGING: develop
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_GIT_PR_RELEASE }}
